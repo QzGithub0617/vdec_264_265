@@ -1,7 +1,7 @@
 #include "video_decoder.h"
 
 VideoDecoder::~VideoDecoder() {		
-    flushDecoder();
+	flushDecoder();
 	closeDecoder();
 }
 
@@ -142,7 +142,7 @@ ErrorCode VideoDecoder::copyFrameData(AVFrame* src, AVFrame* dst)
 
 void VideoDecoder::setCallBack( VideoCallback callback)
 {
-    videoCallback = callback;
+    	videoCallback = callback;
 }
 
 
